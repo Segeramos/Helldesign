@@ -42,13 +42,13 @@ export default function Header() {
         </div>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex space-x-8 text-sm font-medium text-gray-700">
-          <span onClick={() => handleScrollOrNavigate('about')} className="cursor-pointer hover:text-purple-600">About Me</span>
-          <span onClick={() => handleScrollOrNavigate('projects')} className="cursor-pointer hover:text-purple-600">Projects</span>
-          <span onClick={() => handleScrollOrNavigate('client-projects')} className="cursor-pointer hover:text-purple-600">Client Projects</span>
-          <span onClick={() => handleScrollOrNavigate('services')} className="cursor-pointer hover:text-purple-600">Services</span>
-          <RouterLink to="/contact" className="hover:text-purple-600">Contact</RouterLink>
-        </nav>
+{/* Desktop Nav */}
+            <nav className="hidden md:flex space-x-8 text-sm font-medium text-gray-700">
+              <RouterLink to="/about" className="hover:text-purple-600">About Me</RouterLink>
+              <RouterLink to="/services" className="hover:text-purple-600">Services</RouterLink>
+              <RouterLink to="/projects" className="hover:text-purple-600">Projects</RouterLink>
+              <RouterLink to="/contact" className="hover:text-purple-600">Contact</RouterLink>
+            </nav>
 
 
         {/* Social Icons + Hamburger */}
@@ -56,9 +56,10 @@ export default function Header() {
         <div className="flex items-center space-x-4 text-black-600 text-lg">
           <FaXTwitter className="cursor-pointer hover:text-blue-400" />
           <FaInstagram className="cursor-pointer hover:text-pink-800" />
-          <FaLinkedin className="cursor-pointer hover:text-blue-800" />
-          <FaGithub className="cursor-pointer hover:text-green-600" />
-          <FaDiscord className="cursor-pointer hover:text-blue-600" />
+          <a href="https://www.linkedin.com/in/amos-segera-57a13a25b/"target="_blank"rel="noopener noreferrer"><FaLinkedin className="cursor-pointer hover:text-blue-800" /></a>
+          <a href="https://github.com/Segeramos/"target="_blank"rel="noopener noreferrer"aria-label="GitHub Profile"><FaGithub className="cursor-pointer hover:text-green-600" /></a>
+          <a href="https://discord.com/channels/1210268937988743179/1212711123388989450" target="_blank" rel="noopener noreferrer" aria-label="Discord Channel"><FaDiscord className="cursor-pointer hover:text-blue-600" /></a>
+
           <button
             onClick={() => setMenuOpen(!menuOpen)}
             className="text-2xl md:hidden focus:outline-none"
@@ -72,10 +73,10 @@ export default function Header() {
       {menuOpen && (
         <div className="md:hidden absolute top-full left-0 w-full bg-white px-6 pb-4 shadow-lg z-40 animate-slideDown">
           <nav className="flex flex-col space-y-4 text-sm font-medium text-gray-700">
-            <span onClick={() => handleScrollOrNavigate('about')} className="cursor-pointer hover:text-purple-600">About</span>
-            <span onClick={() => handleScrollOrNavigate('projects')} className="cursor-pointer hover:text-purple-600">Projects</span>
-            <span onClick={() => handleScrollOrNavigate('services')} className="cursor-pointer hover:text-purple-600">Services</span>
-            <RouterLink to="/contact" className="hover:text-purple-600" onClick={() => setMenuOpen(false)}>Contact</RouterLink>
+            <RouterLink to="/about" className="hover:text-purple-600">About Me</RouterLink>
+              <RouterLink to="/services" className="hover:text-purple-600">Services</RouterLink>
+              <RouterLink to="/projects" className="hover:text-purple-600">Projects</RouterLink>
+              <RouterLink to="/contact" className="hover:text-purple-600">Contact</RouterLink>
           </nav>
         </div>
       )}

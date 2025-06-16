@@ -2,12 +2,12 @@ import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 
 const projects = [
   {
-    title: "Portfolio Website",
-    image: "/images/portfolio.png",
-    description: "A modern portfolio built with React and Tailwind CSS.",
+    title: "Bookie",
+    image: "bookie.jpg",
+    description: "Get more traffic, more leads, and more sales with our all-in-one digital marketing solutions.",
     tags: ["React", "Tailwind", "Responsive Design"],
-    demoLink: "https://yourportfolio.com",
-    codeLink: "https://github.com/yourusername/portfolio"
+    demoLink: "https://d-m-agency.vercel.app/",
+    codeLink: "https://github.com/Segeramos/Helldesign"
   },
   {
     title: "Task Manager App",
@@ -26,7 +26,7 @@ export default function ProjectsPage() {
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {projects.map((project, index) => (
           <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden">
-            <img src={project.image} alt={project.title} className="w-full h-40 object-cover" />
+            <img src={project.image} alt={project.title} className="w-full h-50 object-cover" />
             <div className="p-4">
               <h3 className="text-xl font-semibold text-purple-800">{project.title}</h3>
               <p className="text-gray-600 text-sm mt-1">{project.description}</p>

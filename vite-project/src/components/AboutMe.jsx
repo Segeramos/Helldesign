@@ -3,7 +3,7 @@ import { FaGoogle, FaLaptopCode } from "react-icons/fa";
 
 
 
-export default function Hero() {
+export default function AboutMe() {
   const certifications = [
     {
       name: 'Front-End Web Development',
@@ -47,7 +47,7 @@ export default function Hero() {
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-gray-100 py-20">
+      <section className="bg-gray-100 py-10">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col-reverse lg:flex-row items-center gap-12">
           <div className="flex-1 space-y-6">
             <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight">
@@ -86,8 +86,8 @@ export default function Hero() {
       </section>
 
       {/* About Me Section */}
-      <section className="bg-white py-20">
-        <div className="max-w-6xl mx-auto px-6 space-y-16 text-gray-800">
+      <section className="bg-white py-10">
+        <div className="max-w-6xl mx-auto px-2 space-y-16 text-gray-800">
           <div className="text-center">
             <h2 className="text-4xl font-extrabold text-purple-700 mb-4">✨ About Me</h2>
             <p className="text-lg max-w-3xl mx-auto">
@@ -180,8 +180,12 @@ export default function Hero() {
                 <ul className="list-disc list-inside text-gray-700 space-y-1">
                   <li>Git & GitHub</li>
                   <li>Figma</li>
-                  <li>Firebase</li>
+  
                   <li>VS Code</li>
+                  <li>Canva</li>
+                  <li>RankMath</li>
+                  <li>SemRush</li>
+                  <li></li>
                 </ul>
               </div>
               <div>
